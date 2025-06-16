@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Mekan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+    <!-- Navigation -->
+    <nav class="bg-white/80 backdrop-blur-sm border-b border-gray-200 fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="font-semibold text-xl text-gray-900">
+                    <a href="/">Mekan</a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="/" class="text-gray-700 hover:text-blue-600 transition-colors">Home</a>
+                    <a href="/about" class="text-blue-600 font-medium">About</a>
+                    <a href="/projects" class="text-gray-700 hover:text-blue-600 transition-colors">Projects</a>
+                    <a href="/blog" class="text-gray-700 hover:text-blue-600 transition-colors">Blog</a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-700 hover:text-blue-600">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="/" class="block px-3 py-2 text-gray-700 hover:text-blue-600">Home</a>
+                <a href="/about" class="block px-3 py-2 text-blue-600 font-medium">About</a>
+                <a href="/projects" class="block px-3 py-2 text-gray-700 hover:text-blue-600">Projects</a>
+                <a href="/blog" class="block px-3 py-2 text-gray-700 hover:text-blue-600">Blog</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="pt-24 pb-16">
+        <div class="max-w-4xl mx-auto px-4">
+            <!-- Header -->
+            <div class="text-center mb-16 fade-in">
+                <h1 class="text-5xl md:text-6xl font-light text-gray-900 mb-6">About Me</h1>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Passionate about creating innovative solutions through technology and continuous learning
+                </p>
+            </div>
+
+            <!-- Education Section -->
+            <section class="mb-16 fade-in">
+                <h2 class="text-3xl font-light text-gray-900 mb-8 border-b border-gray-200 pb-4">Education</h2>
+                <div class="space-y-8">
+                    <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                        <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
+                            <div>
+                                <h3 class="text-xl font-medium text-gray-900">Master of Science in Computer Science</h3>
+                                <p class="text-lg text-gray-600">Stanford University</p>
+                            </div>
+                            <span class="text-sm text-gray-500 mt-2 md:mt-0">2020 - 2022</span>
+                        </div>
+                        <p class="text-gray-600">
+                            Specialized in Machine Learning and Artificial Intelligence. Thesis on "Neural Network Optimization for Real-time Applications".
+                        </p>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                        <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
+                            <div>
+                                <h3 class="text-xl font-medium text-gray-900">Bachelor of Science in Software Engineering</h3>
+                                <p class="text-lg text-gray-600">University of California, Berkeley</p>
+                            </div>
+                            <span class="text-sm text-gray-500 mt-2 md:mt-0">2016 - 2020</span>
+                        </div>
+                        <p class="text-gray-600">
+                            Magna Cum Laude. Focus on algorithms, data structures, and software design patterns.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Awards Section -->
+            <section class="mb-16 fade-in">
+                <h2 class="text-3xl font-light text-gray-900 mb-8 border-b border-gray-200 pb-4">Awards & Recognition</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                        <div class="flex items-start space-x-4">
+                            <div class="flex-shrink-0">
+                                <div class="w-3 h-3 bg-blue-600 rounded-full mt-2"></div>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-medium text-gray-900 mb-2">Google Developer Challenge Winner</h3>
+                                <p class="text-gray-600 text-sm">2023</p>
+                                <p class="text-gray-600 mt-2">First place in machine learning category for innovative healthcare solution</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                        <div class="flex items-start space-x-4">
+                            <div class="flex-shrink-0">
+                                <div class="w-3 h-3 bg-blue-600 rounded-full mt-2"></div>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-medium text-gray-900 mb-2">Best Paper Award</h3>
+                                <p class="text-gray-600 text-sm">ICML 2022</p>
+                                <p class="text-gray-600 mt-2">Research on neural network optimization techniques</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                        <div class="flex items-start space-x-4">
+                            <div class="flex-shrink-0">
+                                <div class="w-3 h-3 bg-blue-600 rounded-full mt-2"></div>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-medium text-gray-900 mb-2">Dean's List</h3>
+                                <p class="text-gray-600 text-sm">2018-2020</p>
+                                <p class="text-gray-600 mt-2">Academic excellence recognition for multiple semesters</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                        <div class="flex items-start space-x-4">
+                            <div class="flex-shrink-0">
+                                <div class="w-3 h-3 bg-blue-600 rounded-full mt-2"></div>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-medium text-gray-900 mb-2">Hackathon Champion</h3>
+                                <p class="text-gray-600 text-sm">TechCrunch Disrupt 2021</p>
+                                <p class="text-gray-600 mt-2">Built AI-powered productivity tool in 48 hours</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Achievements Section -->
+            <section class="mb-16 fade-in">
+                <h2 class="text-3xl font-light text-gray-900 mb-8 border-b border-gray-200 pb-4">Key Achievements</h2>
+                <div class="space-y-6">
+                    <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                        <h3 class="text-xl font-medium text-gray-900 mb-3">Open Source Contributions</h3>
+                        <p class="text-gray-600 mb-4">
+                            Active contributor to major open source projects including TensorFlow, React, and Node.js. 
+                            Over 500+ contributions with 10k+ stars across repositories.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full">JavaScript</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full">Python</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full">Machine Learning</span>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                        <h3 class="text-xl font-medium text-gray-900 mb-3">Published Research</h3>
+                        <p class="text-gray-600 mb-4">
+                            Author of 5+ peer-reviewed papers in top-tier conferences on machine learning and software engineering. 
+                            Research focus on optimizing neural networks for edge computing.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-green-100 text-green-800 text-sm rounded-full">Research</span>
+                            <span class="px-3 py-1 bg-green-100 text-green-800 text-sm rounded-full">AI</span>
+                            <span class="px-3 py-1 bg-green-100 text-green-800 text-sm rounded-full">Optimization</span>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                        <h3 class="text-xl font-medium text-gray-900 mb-3">Tech Leadership</h3>
+                        <p class="text-gray-600 mb-4">
+                            Led engineering teams of 10+ developers at Fortune 500 companies. 
+                            Successfully delivered large-scale applications serving millions of users.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-purple-100 text-purple-800 text-sm rounded-full">Leadership</span>
+                            <span class="px-3 py-1 bg-purple-100 text-purple-800 text-sm rounded-full">Architecture</span>
+                            <span class="px-3 py-1 bg-purple-100 text-purple-800 text-sm rounded-full">Scale</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Resume Download -->
+            <section class="text-center fade-in">
+                <div class="bg-gradient-to-r from-blue-600 to-blue-700 text-white p-8 rounded-lg">
+                    <h2 class="text-2xl font-medium mb-4">Want to know more?</h2>
+                    <p class="text-blue-100 mb-6">Download my complete resume for detailed information about my experience and skills.</p>
+                    <a href="/resume.pdf" download class="inline-flex items-center bg-white text-blue-600 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition-colors">
+                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                        </svg>
+                        Download My Resume
+                    </a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <div class="mb-8">
+                <h3 class="text-2xl font-light mb-4">Get In Touch</h3>
+                <p class="text-gray-400 mb-6">Let's work together on something amazing</p>
+                <a href="mailto:mekan@example.com" class="text-blue-400 hover:text-blue-300 text-lg">mekan@example.com</a>
+            </div>
+            <div class="flex justify-center space-x-6 mb-8">
+                <a href="https://linkedin.com/in/mekan" class="text-gray-400 hover:text-white transition-colors">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                    </svg>
+                </a>
+                <a href="https://github.com/mekan" class="text-gray-400 hover:text-white transition-colors">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                </a>
+            </div>
+            <p class="text-gray-400 text-sm">&copy; 2024 Mekan. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="/js/main.js"></script>
+    <script src="/js/animations.js"></script>
+</body>
+</html>

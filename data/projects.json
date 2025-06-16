@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "Neural Network Classifier",
+    "description": "Built a deep learning model for image classification using TensorFlow and Python",
+    "category": "AI"
+  },
+  {
+    "id": 2,
+    "title": "Sorting Algorithm Visualizer",
+    "description": "Interactive web application that visualizes different sorting algorithms in real-time",
+    "category": "Algorithms"
+  },
+  {
+    "id": 3,
+    "title": "Mathematical Modeling Tool",
+    "description": "Advanced tool for creating and analyzing mathematical models for research purposes",
+    "category": "Mathematics"
+  }
+]
